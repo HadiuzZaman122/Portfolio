@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   ExternalLink, 
-  Github, 
   Layers, 
   Cpu, 
   LineChart, 
@@ -14,6 +13,7 @@ import {
   Sparkles,
   Info
 } from 'lucide-react';
+import { GithubIcon } from './Icons';
 import { projectsData } from '../data/portfolioData';
 
 const Projects = () => {
@@ -104,7 +104,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="btn-primary py-2 px-4 text-xs font-mono"
               >
-                <Github className="w-3.5 h-3.5" />
+                <GithubIcon className="w-3.5 h-3.5" />
                 <span>View Source Code</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </a>
